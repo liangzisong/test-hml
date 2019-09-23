@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>表格</title>
+</head>
+<body>
+<!--
+  表格标签是一个四方块的盒子
+
+  tr 只能放入td
+  td可以包容万物
+
+  table的属性
+  {
+    width        设置宽
+    height       设置高
+    border       设置边框(默认border=0无边框)
+    cellspacing  设置单元格与单元格边框之间的空白间距
+    cellpadding  设置单元格内容与单元格边框之间的空白间距
+    align        设置整个表格在网页中的水平对齐方式
+            (
+              left    (居左，默认)
+              center  (居中)
+              right   (居右)
+            )
+   }
+
+   合并单元格时遵循
+    从上往下
+    从左往右
+            原则
+
+-->
+<table width="500" height="300" border="1" cellspacing="0" cellpadding="5" align="center">
+  <caption>这是一个表格的标题</caption>
+  <thead> <!--设置表格头部-->
+    <tr>  <!--行标签-->
+      <th>姓名</th> <!--表头标签-->
+      <th>性别</th> <!--表头标签-->
+      <th>年龄</th> <!--表头标签-->
+    </tr>
+  </thead>
+  <tbody> <!--设置表格body-->
+    <tr>  <!--行标签-->
+      <td>小王</td> <!--单元格标签-->
+      <td>女</td> <!--单元格标签-->
+      <td rowspan="2">跨行合并单元格，年纪都是18</td> <!--单元格标签-->
+    </tr>
+    <tr>  <!--行标签-->
+      <td>小李</td> <!--单元格标签-->
+      <td>男</td> <!--单元格标签-->
+    </tr>
+    <tr>  <!--行标签-->
+      <td>小张</td> <!--单元格标签-->
+      <td colspan="2" >跨列合并单元格</td> <!--单元格标签-->
+    </tr>
+  </tbody>
+
+</table>
+</body>
+</html>
