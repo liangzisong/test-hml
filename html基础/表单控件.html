@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>表单控件</title>
+</head>
+<body>
+<!--
+  表单域：
+    存放表单的区域  吧表单控件里面的信息全部收集起来
+    input 表单控件
+      1.input是单标签 <input/>
+      2.input可以看做是变色龙，可以根据type（类型）属性变换形状
+
+      type      常用属性
+        text         单行文本输入框
+        password     密码输入框
+        radio        单选按钮
+        checkbox     复选按钮
+        button       普通按钮
+        submit       提交按钮
+        reset        重置按钮
+        image        图像形式的提交按钮
+        file         文件域
+      size        正整数
+        input控件在页面中显示的宽度
+      checked     checked
+        定义选择控件默认被选中的项
+      maxlength   正整数
+        控件允许输入的最多字符数
+-->
+<form action="aaaaa" method="post">
+  <hr>
+  <p>用户名： <input type="text" value="这是输入框的默认值"></p>
+  <p>密&nbsp;&nbsp;&nbsp;&nbsp;码： <input type="password" value="123" maxlength="6"></p>
+  <p>性&nbsp;&nbsp;&nbsp;&nbsp;别：
+    <input type="radio" name="sex">男
+    <input type="radio" name="sex" checked="checked">女
+  </p>
+  <p>爱&nbsp;&nbsp;&nbsp;&nbsp;好：
+    <input type="checkbox" name="hobby">足球
+    <input type="checkbox" name="hobby" checked="checked">篮球
+    <input type="checkbox" name="hobby">乒乓球
+  </p>
+
+  <p><label>使用lable标签包裹的input： <input type="text" value="这是输入框的默认值"></label></p>
+  <p>
+    <label for="two">
+      使用lable标签包裹两个input(使用 for id 的方式)：
+      <input type="text" value="这是输入框的默认值">
+      <input id="two" type="text" value="这是输入框的默认值">
+    </label>
+  </p>
+
+  <input type="button" value="这是一个普通按钮"><br>
+  这是一个下拉选
+  <select>
+    <option value="0">第一个下拉选</option>
+    <option value="1">第二个下拉选</option>
+    <option value="2" selected="selected">第三个下拉选</option>
+    <option value="3">第四个下拉选</option>
+  </select>
+  <br>
+  这是一个文本域
+  <textarea cols="30" rows="10"></textarea> <br>
+
+  <input type="image" src="../img/images/im.jpg" alt="这是一个图片按钮"><br>
+  上传:<input type="file" value="点击上传文件"><br>
+  <input type="submit" value="这是一个提交按钮"><br>
+  <input type="reset" value="这是一个重置按钮"><br>
+</form>
+</body>
+</html>
