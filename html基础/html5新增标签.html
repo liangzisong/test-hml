@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5新增标签</title>
+</head>
+<body>
+<header>语义：定义页面的头部 页眉</header>
+<nav>语义：定义导航栏</nav>
+<footer>语义：定义页面底部 页脚</footer>
+<article>语义：定义文章</article>
+<section>语义：定义区域</section>
+<aside>语义：定义其说出内容之外的内容（侧边栏）</aside>
+<!--
+  datalist 与 input 结合 可以实现带搜索的下拉选
+  input内的list内容，要与datalist的id对应
+-->
+<input type="text" value="请输入姓名" list="star">
+<datalist id="star">
+  <option>刘德华</option>
+  <option>刘若英</option>
+  <option>刘一手</option>
+  <option>张学友</option>
+  <option>好好学习</option>
+</datalist>
+<br><br><br><br>
+<!--
+  fieldset 元素可以将表单内的相关元素进行分组、打包。
+      需要搭配legend使用
+-->
+<fieldset>
+  <legend>用户登录</legend>
+  username: <input type="text">
+  <br><br>
+  password: <input type="password">
+</fieldset>
+<br><br><br><br>
+
+<form action="">
+  input新增属性 <br>
+  请输入邮箱：<input type="email"><br>
+  请输入电话：<input type="tel"><br>
+  请输入网址：<input type="url"><br>
+  请输入数字：<input type="number"><br>
+  请进行搜索：<input type="search"><br>
+  自由拖动滑块：<input type="range"><br>
+  请输入小时分钟：<input type="time"><br>
+  请输入年月日：<input type="date"><br>
+  请输入时间：<input type="date"><br>
+  请输入年月：<input type="month"><br>
+  请输入星期 年：<input type="week"><br>
+  请选择颜色：<input type="color"><br>
+  <input type="submit">
+</form>
+<br><br><br><br>
+<hr>
+  input新增的属性 <br>
+用户名：<input type="text" placeholder="请输入用户名"><br>
+<input type="text" autofocus="autofocus" value="自动获取焦点"><br>
+多文件上传：<input type="file" multiple><br>
+
+</body>
+</html>
